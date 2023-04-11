@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import img2 from "@/public/image2.svg";
-import StepProps from './StepInterface'
+import img2 from "@/public/image2.png";
+import StepProps from "./StepInterface";
 
 const StepThree = ({ totalStep }: StepProps) => {
   return (
@@ -10,8 +10,16 @@ const StepThree = ({ totalStep }: StepProps) => {
         <Image src={img2} alt={""} />
       </div>
 
-      <div className={"flex justify-between items-center mt-[4.18rem]"}>
-        <p className={"text-xl font-bold leading-[1.87rem] text-darkblack"}>
+      <div
+        className={
+          "flex flex-col-reverse sm:flex-row items-end sm:justify-between sm:items-center mt-8 sm:mt-[4.18rem]"
+        }
+      >
+        <p
+          className={
+            "text-xl font-bold leading-[1.87rem] text-darkblack w-full sm:w-auto text-left"
+          }
+        >
           Enter scrape data
         </p>
         <p

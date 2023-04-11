@@ -27,12 +27,12 @@ const Button = ({
     <button
       onClick={onClick}
       style={{ ...style }}
-      className={`h-11 rounded-lg flex items-center justify-center ${
+      className={`h-11 rounded-lg flex items-center justify-center w-full ${className} ${
         size === "small"
-          ? "w-smallWidth"
+          ? "sm:w-smallWidth"
           : size === "medium"
-          ? "w-mediumWidth"
-          : "w-largeWidth"
+          ? "sm:w-mediumWidth"
+          : "sm:w-largeWidth"
       } 
       ${
         type === "contain"
@@ -40,7 +40,7 @@ const Button = ({
             ? `bg-${background}`
             : "bg-gradient-to-b from-[#2D66F8] via-[#2A5EE5] to-[#2554CC]"
           : "bg-transparent border-[#D0D5DD]"
-      } ${className}`}
+      } `}
     >
       {title ? (
         <p className={"font-bold text-white text-base"}>{title}</p>

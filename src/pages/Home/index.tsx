@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <div
       className={
-        "flex w-screen h-screen items-center justify-center bg-background"
+        "flex w-screen h-screen items-center justify-center bg-background px-4 sm:px-0"
       }
     >
       <Button

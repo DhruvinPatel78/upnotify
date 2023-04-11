@@ -25,15 +25,19 @@ const Stepper = ({ steps, onFinish, onSkip, step = 1 }: StepperProps) => {
     }
   }, [step]);
   return (
-    <>
-      <div
-        className={
-          "transition ease-in-out delay-150 duration-300"
-        }
-      >
+    <div
+      className={
+        "flex flex-col items-center justify-between h-screen sm:h-auto"
+      }
+    >
+      <div>
         {steps.find((item: StepType) => item.key === currentStep)?.render}
       </div>
-      <div className={"w-full flex justify-between items-center mt-8"}>
+      <div
+        className={
+          "w-full flex justify-between items-center mt-8 flex-col-reverse sm:flex-row gap-4 sm:gap-0"
+        }
+      >
         <Button
           type={"outline"}
           onClick={onSkip}
@@ -57,7 +61,7 @@ const Stepper = ({ steps, onFinish, onSkip, step = 1 }: StepperProps) => {
           }
         />
       </div>
-    </>
+    </div>
   );
 };
 

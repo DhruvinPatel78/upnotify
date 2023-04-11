@@ -26,12 +26,11 @@ module.exports = {
         smallWidth: "6.875rem",
         mediumWidth: "13.938rem",
         largeWidth: "26.188rem",
-        modalWidth: "32.875rem"
+        modalWidth: "32.875rem",
       },
     },
     fontFamily: {
-      display: ["Inter Tight"],
-      body: ['"Inter Tight"'],
+      inter: ["Inter Tight", "sans-serif"],
     },
   },
   plugins: [],

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img3 from "@/public/image3.svg";
+import img3 from "@/public/image3.png";
 
 import StepProps from "./StepInterface";
 
@@ -11,8 +11,16 @@ const StepFour = ({ totalStep }: StepProps) => {
         <Image src={img3} alt={""} />
       </div>
 
-      <div className={"flex justify-between items-center mt-[4.18rem]"}>
-        <p className={"text-xl font-bold leading-[1.87rem] text-darkblack"}>
+      <div
+        className={
+          "flex flex-col-reverse sm:flex-row items-end sm:justify-between sm:items-center mt-8 sm:mt-[4.18rem]"
+        }
+      >
+        <p
+          className={
+            "text-xl font-bold leading-[1.87rem] text-darkblack w-full sm:w-auto text-left"
+          }
+        >
           Get a list of jobs
         </p>
         <p
